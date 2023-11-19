@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: ;white
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdownmenu ul, .dropdownmenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdownmenu ul {
+    background: lightpink;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdownmenu li {
+    position: relative;
+    width: auto;
+}
+
+.dropdownmenu a {
+    background: lightpink;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px 40px;
+    transition: all 0.25s ease;
+}
+
+.dropdownmenu li:hover a {
+    background: #F8C8DC;
+}
+
+#submenu, #submenu-login {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+li:hover #submenu, li:hover #submenu-login {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+#submenu li, #submenu-login li {
+    float: none;
+    width: 100%;
+}
+
+#submenu a, #submenu-login a {
+    background-color: #FFC0CB;
+}
+
+#submenu a:hover, #submenu-login a:hover {
+    background: #F88379;
+}
+@-webkit-keyframes slide_animation {
+            0% { left: 0px; }
+            20% { left: 0px; }
+            25% { left: -800px; }
+            45% { left: -800px; }
+            50% { left: -1600px; }
+            70% { left: -1600px; }
+            75% { left: -2400px; }
+            95% { left: -2400px; }
+            100% { left: -3200px; }
+        }
+
+        .slide-images {
+            width: 4000px;
+            height: 400px;
+            position: relative;
+            -webkit-animation-name: slide_animation;
+            -webkit-animation-duration: 10s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-play-state: running;
+        }
+
+        .img-container {
+            height: 400px;
+            width: 800px;
+            float: left;
+            overflow: hidden;
+
+        }
+        .img-container img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+.copyright {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    margin: 0 10px; 
+}
